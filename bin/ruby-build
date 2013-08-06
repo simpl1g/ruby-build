@@ -274,7 +274,7 @@ download_tarball() {
   local package_filename="$2"
   local checksum="$3"
 
-  echo "-> $package_url" >&2
+  echo "-++> $package_url" >&2
 
   { http get "$package_url" "$package_filename"
     verify_checksum "$package_filename" "$checksum"
